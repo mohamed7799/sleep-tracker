@@ -1,5 +1,12 @@
+import { Route, Routes } from "react-router-dom";
+import WelcomePage from "./pages/welcomePage";
+
 const App = () => {
-  return <h1 className="font-bold text-center text-6xl">Sleep tracker</h1>;
+  return (
+    <Routes>
+      <Route path="/" element={<WelcomePage />}></Route>
+    </Routes>
+  );
 };
 
 export default App;

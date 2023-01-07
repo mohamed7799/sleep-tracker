@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply py-3 px-6 rounded-md shadow-lg font-bold;
+  }
+}
