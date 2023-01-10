@@ -6,4 +6,8 @@
   .btn {
     @apply py-3 px-6 rounded-md shadow-lg font-bold;
   }
+
+  .sign-up-input {
+    @apply py-3 px-6 border-2 rounded-md outline-blue-500 font-semibold;
+  }
 }
