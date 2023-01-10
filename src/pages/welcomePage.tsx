@@ -3,12 +3,15 @@ import pic from "../assets/welcome-page-pic.svg";
 import { Link, Outlet } from "react-router-dom";
 const WelcomePage = () => {
   return (
-    <div className="md:flex h-screen">
+    <div className="md:flex min-h-screen">
       <div className="h-screen flex-1 flex flex-col">
-        <h1 className="flex gap-3 justify-center py-6 text-3xl font-bold text-blue-500 mb-6 md:mb-0 md:text-5xl">
-          Sleep Tracker
-          <BsMoonStars></BsMoonStars>
-        </h1>
+        <Link to="/">
+          <h1 className="flex gap-3 justify-center py-6 text-3xl font-bold text-blue-500  md:text-5xl">
+            Sleep Tracker
+            <BsMoonStars></BsMoonStars>
+          </h1>
+        </Link>
+
         <div className="flex-1 flex flex-col justify-center items-center">
           <Outlet></Outlet>
         </div>
